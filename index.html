@@ -3,9 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Username Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./words/adjectives/1syllableadjectives.js"></script>
+    <script type="text/javascript" src="./words/nouns/nouns.js"></script>
     <script type="text/javascript" src="generator.js"></script>
   </head>
   <body>
-    <button type="button" onclick="printAlert();">Generate</button>
+    <center>
+      <h1 id="username">generatedUsername</h1>
+      <button type="button" id="generateButton" onclick="generateUsername();">Generate</button>
+    </center>
   </body>
 </html>

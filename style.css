@@ -1,0 +1,16 @@
+h1 {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 10px;
+}
+#generateButton {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    margin-top: 50px;
+}
