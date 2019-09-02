@@ -1,11 +1,10 @@
 function generateUsername() {
-    adjListLength = onesyllableadjectives.length;
-    nounListLength = nouns.length;
+    adjectiveRandomIndex = Math.floor(Math.random() * adjectives.length);
+    adverbRandomIndex = Math.floor(Math.random() * adverbs.length);
+    nounRandomIndex = Math.floor(Math.random() * nouns.length);
+    verbRandomIndex = Math.floor(Math.random() * verbs.length);
 
-    adjRandomIndex = Math.floor(Math.random() * adjListLength);
-    nounRandomIndex = Math.floor(Math.random() * nounListLength);
-
-    document.getElementById("username").innerHTML = (onesyllableadjectives[adjRandomIndex] + capitalizeFirstLetter(nouns[nounRandomIndex]));
+    document.getElementById("username").innerHTML = (adjectives[adjectiveRandomIndex] + capitalizeFirstLetter(nouns[nounRandomIndex]));
 }
 
 function capitalizeFirstLetter(string) {
